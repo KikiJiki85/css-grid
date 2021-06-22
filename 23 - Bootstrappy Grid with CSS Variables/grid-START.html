@@ -13,7 +13,7 @@
 
   <div class="grid">
     <div class="item">1</div>
-    <div class="item">wesbostaoheuhatoehu</div>
+    <div class="item" style="--span: 3;">wesbostaoheuhatoehu</div>
     <div class="item">3</div>
     <div class="item">4</div>
   </div>
@@ -27,8 +27,10 @@
 
     .item {
       /* min-width: 0; */
-      overflow: hidden;
-      grid-column: span 1;
+      /* overflow: hidden; */
+      width: 100%;
+      --span: 1;
+      grid-column: span var(--span);
     }
   </style>
 
